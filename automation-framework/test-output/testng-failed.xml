@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MakeMyTrip]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OpenHomePage(failed)">
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="openMakeMyTrip"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- OpenHomePage(failed) -->
+</suite> <!-- Failed suite [MakeMyTrip] -->

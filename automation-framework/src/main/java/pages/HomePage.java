@@ -1,0 +1,45 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+   WebDriver driver;
+   
+   @FindBy(linkText="Flights")
+   private WebElement flightsTab;
+   
+   @FindBy(xpath = "//span[text()='Hotels']")
+   private WebElement hotelsTab;
+   
+   @FindBy(css ="#SW > div.landingContainer.eng > div.headerOuter > div > div > nav > ul > li.menu_Homestays > span > a > span.headerIconTextAlignment.chNavText.darkGreyText")
+   private WebElement homeStaysTab;
+   
+   @FindBy(partialLinkText="Holiday Package")
+   private WebElement holidayPackage;
+   
+   public HomePage(WebDriver driver) {
+	   this.driver=driver;
+	   PageFactory.initElements(driver, this); //driver refers to the driver we select(Chrome, edge)
+	   								//this refers to Home page object, It tells pagefactory to find all the WebElements with @FindBy and bind to elements on web page
+	    }
+   
+   public void clickOnFlightsTab() {
+	   flightsTab.click();
+   }
+   
+   public void clickOnHotelsTab() {
+	   hotelsTab.click();
+   }
+   
+   public void clickOnHomestaysTab() {
+	   homeStaysTab.click();
+   }
+   
+   public void clickHolidayPackageTab() {
+	   holidayPackage.click();
+   }
+   
+}

@@ -1,0 +1,17 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+import utils.ConfigReader;
+
+public class BaseTest {
+public static WebDriver Driver;
+public static ConfigReader config;
+
+@BeforeMethod
+public void setUp() {
+	
+}
+
+}

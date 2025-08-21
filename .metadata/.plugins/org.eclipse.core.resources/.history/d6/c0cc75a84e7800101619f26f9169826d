@@ -1,0 +1,5 @@
+browser=chrome
+baserl=//www.mskrmytrip.com/
+implicitWait=10
+explicitwait=10
+headless=false

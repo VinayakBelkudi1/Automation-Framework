@@ -1,0 +1,61 @@
+package base;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ConfigReader;
+
+public class BaseTest {
+public static WebDriver Driver;
+public static ConfigReader config;
+
+@BeforeMethod
+public void setUp() {
+	config=new ConfigReader();
+	
+	String browser=config.getPropertyValue("browser");
+	
+	switch(browser) {
+	case "chrome": 
+		WebDriverManager.chromedriver().setup();
+		Driver=new ChromeDriver();
+		break;
+		
+	case "firefox":
+		WebDriverManager.firefoxdriver().setup();
+		Driver=new FirefoxDriver();
+		break;
+		
+	case "edge":
+		WebDriverManager.edgedriver().setup();
+		Driver=new EdgeDriver();
+		break;
+		
+	default:
+		throw new IllegalArgumentException("Browser not supported"+browser);
+		
+	}
+	Driver.manage().window().maximize();
+	
+	Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getPropertyValue("implicitWait"))));
+	
+	Driver.get(config.getPropertyValue("baseurl"));
+	
+}
+
+@AfterMethod
+public void teardown() {
+	if(Driver!=null) {
+		Driver.quit();
+		
+	}
+}
+
+}
