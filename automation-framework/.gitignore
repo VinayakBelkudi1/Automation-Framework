@@ -1,41 +1,33 @@
-# Eclipse metadata
+# Eclipse specific files
 .metadata/
 *.log
 *.tmp
 *.bak
 *.swp
 *.snap
-
-# Eclipse project settings
 *.classpath
 *.project
 *.settings/
 
-# Maven build
+# Maven build folder
 target/
 
-# Java class files
-*.class
-
-# JAR / WAR / EAR files
-*.jar
-*.war
-*.ear
-
-# TestNG / Test outputs
+# TestNG / Selenium reports
 test-output/
-surefire-reports/
+screenshots/
 
-# IntelliJ IDEA
+# IDE specific folders
 .idea/
 *.iml
+*.ipr
 *.iws
-out/
 
-# Operating system files
+# OS specific files
 .DS_Store
 Thumbs.db
 
-# Other temporary files
-*.orig
-*.rej
+# Others
+*.class
+*.jar
+*.war
+*.ear
