@@ -1,14 +1,55 @@
-# Ignore target build directory
-target/
-
-# Ignore Eclipse project files
-.classpath
-.project
+# Eclipse files
+.metadata/
+*.log
+*.tmp
+*.bak
+*.swp
 .settings/
+*.launch
 
-# Ignore IntelliJ project files
+# Eclipse project files
+*.classpath
+*.project
+*.cproject
+*.externalToolBuilders
+*.markers
+*.index
+*.snap
+*.history/
+
+# Maven target directory
+target/
+bin/
+out/
+
+# IntelliJ IDEA files (if used later)
 .idea/
 *.iml
+*.iws
+*.ipr
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git output and logs
+*.orig
+*.rej
+*.patch
+
+# TestNG reports
+test-output/
+
+# Temporary files
+*.tmp
+*.temp
 
 # Logs
 *.log
+
+# Node / frontend (if any in project later)
+node_modules/
+dist/
+
+# Environment files
+.env
