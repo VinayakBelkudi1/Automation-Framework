@@ -12,7 +12,7 @@ public class BusesPage {
 
     // PageFactory locators
     @FindBy(id = "fromCity")
-    private WebElement fromCityInput;
+    private WebElement fromCityInputvalue;
 
     @FindBy(id = "toCity")
     private WebElement toCityInput;
@@ -27,7 +27,7 @@ public class BusesPage {
 
     // Actions
     public void enterFromCity(String fromCity) {
-        fromCityInput.sendKeys(fromCity);
+    	fromCityInputvalue.sendKeys(fromCity);
     }
 
     public void enterToCity(String toCity) {
