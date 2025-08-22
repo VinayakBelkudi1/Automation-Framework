@@ -1,55 +1,41 @@
-# Eclipse files
+# Eclipse metadata
 .metadata/
 *.log
 *.tmp
 *.bak
 *.swp
-.settings/
-*.launch
+*.snap
 
-# Eclipse project files
+# Eclipse project settings
 *.classpath
 *.project
-*.cproject
-*.externalToolBuilders
-*.markers
-*.index
-*.snap
-*.history/
+*.settings/
 
-# Maven target directory
+# Maven build
 target/
-bin/
-out/
 
-# IntelliJ IDEA files (if used later)
+# Java class files
+*.class
+
+# JAR / WAR / EAR files
+*.jar
+*.war
+*.ear
+
+# TestNG / Test outputs
+test-output/
+surefire-reports/
+
+# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
-*.ipr
+out/
 
-# OS generated files
+# Operating system files
 .DS_Store
 Thumbs.db
 
-# Git output and logs
+# Other temporary files
 *.orig
 *.rej
-*.patch
-
-# TestNG reports
-test-output/
-
-# Temporary files
-*.tmp
-*.temp
-
-# Logs
-*.log
-
-# Node / frontend (if any in project later)
-node_modules/
-dist/
-
-# Environment files
-.env
