@@ -12,6 +12,6 @@ public class HomePageTest extends BaseTest {
 		String title=Driver.getTitle();
 		System.out.println("Title of the page is "+title);
 		
-		Assert.assertTrue(title.contains("MakeMyTrip") ,"title should be MakeMyTrip but got" +title);
+		Assert.assertTrue(title.contains("MakeMyTrip") ,"Loacl changes" +title);
 	}
 }
