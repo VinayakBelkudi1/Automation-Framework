@@ -8,23 +8,25 @@ public class ConfigReader {
 	
 	private Properties properties; 
 	
+	//Constructor
 	public ConfigReader() {
-		properties=new Properties();
+		                   properties=new Properties();
 		
-		try {
-			FileInputStream fis= new FileInputStream("src\\main\\resources\\config.properties");
-			properties.load(fis);
+		                   try {
+			                     FileInputStream fis= new FileInputStream("src\\main\\resources\\config.properties");
+			                     properties.load(fis);
 			
-		}
-		catch(IOException e){
-			e.printStackTrace();
+		                       }
+		                   catch(IOException e){
+			                     e.printStackTrace();
 			
-		}
+		                       }
 		
-	}
-		public String getPropertyValue(String key){
-			return properties.getProperty(key);
-		}
+	                      }
+	//method to get property values
+    public String getPropertyValue(String key){
+			                                       return properties.getProperty(key);
+		                                      }
 	}
 	
 

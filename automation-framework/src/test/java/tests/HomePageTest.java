@@ -8,10 +8,17 @@ import base.BaseTest;
 public class HomePageTest extends BaseTest {
 
 	@Test
-	public void openMakeMyTrip() {
+	public void testOpenMakeMyTrip() {
+		
 		String title=Driver.getTitle();
 		System.out.println("Title of the page is "+title);
 		
 		Assert.assertTrue(title.contains("MakeMyTrip") ,"Remote changes" +title);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
