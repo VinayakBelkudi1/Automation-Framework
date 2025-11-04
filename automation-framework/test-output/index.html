@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-MakeMyTrip">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MakeMyTrip" title="tests.HomePageTest" class="method navigator-link" hash-for-method="openMakeMyTrip">openMakeMyTrip</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MakeMyTrip" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testOpenMakeMyTrip">testOpenMakeMyTrip</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MakeMyTrip -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openMakeMyTrip">
-                  </a> <!-- openMakeMyTrip -->
-                  <span class="method-name">openMakeMyTrip</span>
+                  <a name="testOpenMakeMyTrip">
+                  </a> <!-- testOpenMakeMyTrip -->
+                  <span class="method-name">testOpenMakeMyTrip</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,11 +143,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;MakeMyTrip&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;HomePage&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AutomationTesting&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HomePage --&gt;
+  &lt;/test&gt; &lt;!-- AutomationTesting --&gt;
 &lt;/suite&gt; &lt;!-- MakeMyTrip --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">HomePage (1 class)</span>
+                <span class="test-name">AutomationTesting (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openMakeMyTrip')
+data.setCell(0, 1, 'testOpenMakeMyTrip')
 data.setCell(0, 2, 'tests.HomePageTest')
-data.setCell(0, 3, 112);
+data.setCell(0, 3, 2986);
 window.suiteTableData['MakeMyTrip']= { tableData: data, tableDiv: 'times-div-MakeMyTrip'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 112 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-MakeMyTrip">
               </div> <!-- times-div-MakeMyTrip -->
             </div> <!-- times-div -->
@@ -221,18 +221,42 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">openMakeMyTrip</span>
-                <span class="method-start">12157 ms</span>
+                <span class="method-name">testOpenMakeMyTrip</span>
+                <span class="method-start">8272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12286 ms</span>
+                <span class="method-start">11304 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">15874 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">15877 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">15902 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
