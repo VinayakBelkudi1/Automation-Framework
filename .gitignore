@@ -8,14 +8,11 @@
 target/
 bin/
 
-# Ignore logs and temp
+# Ignore logs and temp files
 *.log
 *.tmp
 
-# Ignore OS files
+# Ignore OS-generated files
 .DS_Store
 Thumbs.db
 
-.metadata/
-*.log
-*.tmp
