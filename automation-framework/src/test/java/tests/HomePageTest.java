@@ -13,7 +13,7 @@ public class HomePageTest extends BaseTest {
 		String title=Driver.getTitle();
 		System.out.println("Title of the page is "+title);
 		System.out.println("Feature branch practice");
-		System.out.println("Feature branch practice33333");
+		System.out.println("Feature branch practice4444");
 		
 		Assert.assertTrue(title.contains("MakeMyTrip") ,"Remote changes" +title);
 		try {
