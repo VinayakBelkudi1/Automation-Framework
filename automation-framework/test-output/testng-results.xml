@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-04T08:27:09 IST" name="MakeMyTrip" finished-at="2025-11-04T08:27:25 IST" duration-ms="15857">
+  <suite started-at="2025-11-28T14:34:06 IST" name="Default suite" finished-at="2025-11-28T14:34:22 IST" duration-ms="16360">
     <groups>
     </groups>
-    <test started-at="2025-11-04T08:27:09 IST" name="AutomationTesting" finished-at="2025-11-04T08:27:25 IST" duration-ms="15857">
+    <test started-at="2025-11-28T14:34:06 IST" name="Default test" finished-at="2025-11-28T14:34:22 IST" duration-ms="16360">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:09 IST" name="beforeSuite" finished-at="2025-11-04T08:27:09 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:06 IST" name="beforeSuite" finished-at="2025-11-28T14:34:06 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:09 IST" name="beforeTest" finished-at="2025-11-04T08:27:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:06 IST" name="beforeTest" finished-at="2025-11-28T14:34:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:09 IST" name="beforeClass" finished-at="2025-11-04T08:27:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:06 IST" name="beforeClass" finished-at="2025-11-28T14:34:12 IST" duration-ms="5915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:09 IST" name="setUp" finished-at="2025-11-04T08:27:17 IST" duration-ms="8176" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:12 IST" name="setUp" finished-at="2025-11-28T14:34:12 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testOpenMakeMyTrip()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:17 IST" name="testOpenMakeMyTrip" finished-at="2025-11-04T08:27:20 IST" duration-ms="2986" status="PASS">
+        <test-method signature="testOpenMakeMyTrip()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:12 IST" name="testOpenMakeMyTrip" finished-at="2025-11-28T14:34:21 IST" duration-ms="9757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMakeMyTrip -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:20 IST" name="teardown" finished-at="2025-11-04T08:27:25 IST" duration-ms="4569" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:21 IST" name="teardown" finished-at="2025-11-28T14:34:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:25 IST" name="afterClass" finished-at="2025-11-04T08:27:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:21 IST" name="afterClass" finished-at="2025-11-28T14:34:22 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:25 IST" name="afterTest" finished-at="2025-11-04T08:27:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:22 IST" name="afterTest" finished-at="2025-11-28T14:34:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.HomePageTest@65e98b1c]" started-at="2025-11-04T08:27:25 IST" name="afterSuite" finished-at="2025-11-04T08:27:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.HomePageTest@8297b3a]" started-at="2025-11-28T14:34:22 IST" name="afterSuite" finished-at="2025-11-28T14:34:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- tests.HomePageTest -->
-    </test> <!-- AutomationTesting -->
-  </suite> <!-- MakeMyTrip -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
