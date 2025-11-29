@@ -9,41 +9,50 @@ import org.openqa.selenium.support.PageFactory;
 public class FlightsPage {
 	WebDriver driver;
 	
-	@FindBy(xpath="//input[@placeholder='from']")
+	@FindBy(xpath="//span[text(),'From']")
 	private WebElement fromCity;
 	
-	@FindBy(xpath="//input[@id='toCity']")
+	@FindBy(xpath="//input[@placeholder,'From']")
+	private WebElement fromInput;
+	
+	@FindBy(xpath="//span[text(),'To']")
 	private WebElement toCity;
 	
-	@FindBy(xpath="//input[@id='departure'")
-	private WebElement departureDate;
+	@FindBy(xpath="//input[@placeholder,'To']")
+	private WebElement toInput;
 	
 	@FindBy(linkText="Search")
-	private WebElement search;
+	private WebElement searchButton;
+	
+
+	
+	
 	
 	
 	public FlightsPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	public void clickFrom() {
+		fromCity.click();
+	}
+	
+	public void clickTo() {
+		toCity.click();
+	}
 
 	public void enterFromCity(String fromCityInput) {
-		fromCity.sendKeys(fromCityInput);
+		fromInput.sendKeys(fromCityInput);
 	}
 	
 	public void enterToCity(String toCityInput) {
-		toCity.sendKeys(toCityInput);
+		toInput.sendKeys(toCityInput);
 	}
 	
-	public void selectDate(String date) {
-		departureDate.click();
-		
-		String departureDateXpath="//div[@aria-lable='"+date+"']";
-		WebElement dateElement=driver.findElement(By.xpath(departureDateXpath));
-		dateElement.click();
-	}
+	
 	
 	public void search() {
-		search.click();
+		searchButton.click();
 	}
 }

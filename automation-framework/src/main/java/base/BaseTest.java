@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -58,7 +59,10 @@ public void beforeClass() {
 	switch(browser) {
 
 						case "chrome": WebDriverManager.chromedriver().setup();
-									   Driver=new ChromeDriver();
+									   ChromeOptions options=new ChromeOptions();
+									   options.addArguments("--incognito");
+									   options.addArguments("--disable-notifications");
+									   Driver=new ChromeDriver(options);
 									   break;
 
 						case "firefox":WebDriverManager.firefoxdriver().setup();
