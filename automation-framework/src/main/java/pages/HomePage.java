@@ -6,18 +6,24 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.JSUtils;
+
 public class HomePage {
 
     WebDriver driver;
     WebDriverWait wait;
+    JSUtils js;
 
+    // Constructor
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
+        //initializes all @FindBy elements in the Page Object class and creates lazy-loading proxies, so we can use elements without calling findElement manually.
     }
+    
 
-    @FindBy(css="span.commonModal__close")
+    @FindBy(css="span.commonModal__close")  //id, linkText, partialLinkText, xpath
     private WebElement closeHomePopUp;
 
     @FindBy(css="div.tp-dt-header-icon")
@@ -25,6 +31,8 @@ public class HomePage {
 
     @FindBy(css ="#SW > div.landingContainer.eng > div.makeFlex.hrtlCenter.prependTop5.appendBottom30 > ul > li:nth-child(1) > div > p.whiteText.appendBottom3.font11")
     private WebElement listProperty;
+    
+    
 
     // ---------- POPUP HANDLING ---------- //
 
@@ -46,6 +54,8 @@ public class HomePage {
         }
     }
 
+    
+    
     // ---------- LIST PROPERTY ---------- //
 
     public void clickOnListProperty() {
@@ -54,15 +64,14 @@ public class HomePage {
             listProperty.click();
         } catch (Exception e) {
             System.out.println("Could not click List Your Property. Trying JS click...");
-            jsClick(listProperty);
+            js.jsClick(listProperty);
         }
     }
+    
+    
+   
+    
+    
 
-    // ---------- UTILITY ---------- //
-
-    private void jsClick(WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", element);
-    }
 
 }
