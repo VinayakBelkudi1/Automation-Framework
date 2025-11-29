@@ -24,7 +24,7 @@ public class HomePageTest extends BaseTest {
 	    log.info("popus cancelled"); 
 	    // Get title
 	    String title = Driver.getTitle();
-	    System.out.println("Page title: " + title);
+	    System.out.println("Page title123: " + title);
 	    Assert.assertTrue(title.contains("MakeMyTrip"));
 
 	    // Close AI popup
