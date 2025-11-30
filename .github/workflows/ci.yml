@@ -1,35 +1,33 @@
-name: CI Build   # Name of the workflow shown in GitHub Actions tab
+name: CI Build
 
 on:
-  push:           # Trigger workflow when code is pushed
-    branches: [ main ]   # Only for 'main' branch
-  pull_request:   # Also run when a pull request is created/updated
+  push:
+    branches: [ main ]
+  pull_request:
 
 jobs:
-  build: 
-    runs-on: ubuntu-latest   # GitHub provides a fresh Ubuntu VM for this job
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: automation-framework   # 👈 important!
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  
-        # Downloads your repository into the runner so workflow can access files
+        uses: actions/checkout@v4
 
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17        # Installs Java 17 on the VM
-        # Required if your project uses Maven/Gradle or Java-based automation
-      - name: Navigate to project folder
-        run: cd Automation-Framework
-        
+          java-version: 17
+
       - name: Build with Maven
-        run: mvn clean test       
-        # Executes your automation tests or build commands
+        run: mvn clean test
 
       - name: Upload Test Reports
         uses: actions/upload-artifact@v4
         with:
-          name: reports                     # Name of the artifact bundle
-          path: target/surefire-reports/    # Folder to upload (TestNG/JUnit reports)
-        # Makes test results downloadable from GitHub Actions UI
+          name: reports
+          path: automation-framework/target/surefire-reports/
