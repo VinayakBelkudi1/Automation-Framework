@@ -17,6 +17,7 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
+          distribution: temurin
           java-version: 17        # Installs Java 17 on the VM
         # Required if your project uses Maven/Gradle or Java-based automation
 
