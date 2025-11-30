@@ -20,7 +20,9 @@ jobs:
           distribution: temurin
           java-version: 17        # Installs Java 17 on the VM
         # Required if your project uses Maven/Gradle or Java-based automation
-
+      - name: Navigate to project folder
+        run: cd Automation-Framework
+        
       - name: Build with Maven
         run: mvn clean test       
         # Executes your automation tests or build commands
