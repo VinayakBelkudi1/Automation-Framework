@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,7 +19,7 @@ public class HomePage {
     // Constructor
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
         //initializes all @FindBy elements in the Page Object class and creates lazy-loading proxies, so we can use elements without calling findElement manually.
     }
